@@ -13,8 +13,8 @@ else
 mkdir -p $TWEET_DIR;
 fi
 
-TWEET_DIR="/home/fleshwounded/Tweets"
-IMG_DIR="/home/fleshwounded/Pictures"
+TWEET_DIR="$HOME/Tweets"
+IMG_DIR="$HOME/Pictures"
 LOG_FILE="/tmp/getaphrase_log.log"
 CHOSEN_IMG=$(find "$IMG_DIR" -type f | shuf -n 1)
 CHOOSE_TWEET=$(find $TWEET_DIR -type f | shuf -n 1)
